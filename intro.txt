@@ -1,1 +1,2 @@
-this is txt file of 
+this is txt file of x'.d
+d
