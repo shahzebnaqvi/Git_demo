@@ -1,0 +1,141 @@
+import json
+
+pizza={}
+
+try:
+    with open("pizza.json","r") as f:
+        pizza = json.load(f)    
+
+except:
+    print("An exception occurred")
+
+while True:
+    name=input("Enter the name of pizza")
+    price=input("Enter the price of pizza")
+    ab=input("Enter Q for Quit / l for List of pizza")
+    pizza.update([(name,price)])
+    if (ab=="Q"):
+        break
+    elif(ab=="l"):
+        print(pizza)
+
+print(pizza)
+with open("pizza.json", "w") as f:
+    json.dump(pizza,f)
+
+
+
+
+
+
+
+
+
+
+
+
+
+import json
+import csv
+pizza={}
+while True:
+    name=input("Enter the name of pizza")
+    price=input("Enter the price of pizza")
+    quit=input("Enter Q for Quit")
+    pizza.update([(name,price)])
+    if (quit=="Q"):
+        break
+
+print(pizza)
+with open("greet.json", "w") as f:
+    json.dump(pizza,f)
+
+
+
+
+with open('test.csv', 'w') as f:
+    for key in pizza:
+        f.write("%s,%s\n"%(key,pizza[key]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import json
+
+pizza={}
+
+try:
+    with open("pizza.json","r") as f:
+        pizza = json.load(f)    
+
+except:
+    print("An exception occurred")
+
+while True:
+    name=input("Enter the name of pizza")
+    price=input("Enter the price of pizza")
+    ab=input("Enter Q for Quit / l for List of pizza")
+    pizza.update([(name,price)])
+    if (ab=="Q"):
+        break
+    elif(ab=="l"):
+        print(pizza)
+
+print(pizza)
+with open("pizza.json", "w") as f:
+    json.dump(pizza,f)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import csv
+Tourmanagement={}
+while True:
+    Tour=input("Enter the name of city")
+    price=input("Enter the price of tour to " + Tour)
+    quit=input("Enter Q for Quit")
+    Tourmanagement.update([(Tour,price)])
+    if (quit=="Q"):
+        break
+with open('test.csv', 'w') as f:
+    for key in Tourmanagement:
+        f.write("%s,%s\n"%(key,Tourmanagement[key]))
+
+        
+
